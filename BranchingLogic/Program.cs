@@ -26,7 +26,30 @@ namespace BranchingLogic
             //Console.WriteLine("This happens no matter what!");
             //Console.ReadLine();
 
+            // If x is less than 10 and greater than 5
 
+            //var x = 4;
+            //if ((x < 10) || 
+            //    (x > 5)) 
+            //{
+            //    Console.WriteLine("YOu're above 50% there");
+            //}
+
+
+
+
+            Console.ReadLine();
         }
+    }
+
+    enum DaysOfTheWeek
+    {
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday
     }
 }
