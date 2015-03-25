@@ -35,9 +35,35 @@ namespace BranchingLogic
             //    Console.WriteLine("YOu're above 50% there");
             //}
 
+            DaysOfTheWeek today = DaysOfTheWeek.Friday;
 
+            var something = Console.ReadLine();
 
+            int value = int.Parse(something);
 
+            today = (value > -1 && value < 7) ?
+                (DaysOfTheWeek)value :
+                DaysOfTheWeek.Wednesday;
+
+            switch (today)
+            { 
+                case DaysOfTheWeek.Wednesday:
+                    Console.WriteLine("It's hump day, woohoo!");
+                    break;
+                case DaysOfTheWeek.Tuesday:
+                    Console.WriteLine("We got the club going up!  On a...");
+                    break;
+                case DaysOfTheWeek.Thursday:
+                    Console.WriteLine("I'm Thirsty");
+                    break;
+                case DaysOfTheWeek.Friday:
+                case DaysOfTheWeek.Saturday:
+                    Console.WriteLine("Date night!");
+                    break;
+                default:
+                    Console.WriteLine("This was probz and error M8");
+                    break;
+            }
             Console.ReadLine();
         }
     }
